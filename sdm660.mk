@@ -484,6 +484,7 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
+    QtiTelephonyServicelibrary \
     qti-telephony-utils \
     qti_telephony_utils.xml \
     rild \
@@ -492,11 +493,6 @@ PRODUCT_PACKAGES += \
 # RIL JAR
 PRODUCT_BOOT_JARS += \
     telephony-ext
-
-# Seccomp policy
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
-    $(COMMON_PATH)/seccomp/mediaextractor-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
 # Sensors
 PRODUCT_PACKAGES += \
